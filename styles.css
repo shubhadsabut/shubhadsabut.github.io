@@ -1,0 +1,136 @@
+
+.flip-card {
+  background-color: transparent;
+  max-width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  text-align: center; 
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+.flip-card-front h4{
+  margin-top:40%;
+}
+
+.flip-card-back {
+  color: black;
+  padding-top: 34%;
+  transform: rotateY(180deg);
+}
+
+#f1{
+  background-color: #ff6140; 
+}
+
+#b1{
+  background-color: #ffa06d;
+}
+
+#f2{
+  background-color: #009688; 
+}
+
+#b2{
+  background-color: #52c7b8;
+}
+
+#f3{
+  background-color: #00c853; 
+}
+
+#b3{
+  background-color: #5efc82;
+}
+
+
+#mynav{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#photos{
+  width:100%;
+}
+
+#about, #skills, #exp, #projects, #python, #contact{
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.nav-item{
+  margin-right: 4px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4512e !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.education{
+  color: white;
+  background-color: #292d2f;
+}
+
+.pro{
+  background-color: #ccc;
+}
+
+#python{
+  background-color: #2f3537;
+  color: white;
+}
+
+#exp{
+  background-color: #efdcd5;
+}
+
+#skills{
+  background-color: #eeeeee;
+}
+
+#about{
+  background-color: #eeeaff;
+}
